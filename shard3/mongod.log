@@ -1,0 +1,269 @@
+2019-11-17T22:22:29.529+0800 I  CONTROL  [main] ***** SERVER RESTARTED *****
+2019-11-17T22:22:29.570+0800 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-11-17T22:22:29.672+0800 I  CONTROL  [initandlisten] MongoDB starting : pid=57250 port=27022 dbpath=/root/fenpian/shard3/dbPath 64-bit host=worker2
+2019-11-17T22:22:29.672+0800 I  CONTROL  [initandlisten] db version v4.2.1
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten] allocator: tcmalloc
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten] modules: enterprise 
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten] build environment:
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten]     distmod: rhel70
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten]     distarch: x86_64
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten]     target_arch: x86_64
+2019-11-17T22:22:29.673+0800 I  CONTROL  [initandlisten] options: { config: "mongdb.conf", net: { bindIp: "0.0.0.0", port: 27022 }, processManagement: { fork: true, pidFilePath: "/var/run/mongodb/mongod.pid", timeZoneInfo: "/usr/share/zoneinfo" }, replication: { replSetName: "shard-rs" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "/root/fenpian/shard3/dbPath", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/root/fenpian/shard3/mongod.log" } }
+2019-11-17T22:22:29.673+0800 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=486M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2019-11-17T22:22:32.902+0800 I  STORAGE  [initandlisten] WiredTiger message [1574000552:902968][57250:0x7f7e04c0ac40], txn-recover: Set global recovery timestamp: (0,0)
+2019-11-17T22:22:32.950+0800 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-11-17T22:22:32.987+0800 I  STORAGE  [initandlisten] Timestamp monitor starting
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] 
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] 
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] 
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] 
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2019-11-17T22:22:32.988+0800 I  CONTROL  [initandlisten] 
+2019-11-17T22:22:32.989+0800 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2019-11-17T22:22:32.989+0800 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2019-11-17T22:22:32.990+0800 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2019-11-17T22:22:32.990+0800 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2019-11-17T22:22:32.990+0800 W  SHARDING [initandlisten] Started with --shardsvr, but no shardIdentity document was found on disk in admin.system.version. This most likely means this server has not yet been added to a sharded cluster.
+2019-11-17T22:22:32.990+0800 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 550844ab-7eb8-4e67-9c08-56c74b06c162 and options: { capped: true, size: 10485760 }
+2019-11-17T22:22:32.995+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2019-11-17T22:22:32.995+0800 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2019-11-17T22:22:32.995+0800 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/root/fenpian/shard3/dbPath/diagnostic.data'
+2019-11-17T22:22:32.995+0800 I  STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: 8aec2d5e-cc66-458a-a14f-27b8fcd47283 and options: {}
+2019-11-17T22:22:32.999+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.oplogTruncateAfterPoint
+2019-11-17T22:22:33.000+0800 I  STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: f7e84ce1-c63c-4318-b861-32f606180642 and options: {}
+2019-11-17T22:22:33.005+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.minvalid
+2019-11-17T22:22:33.006+0800 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2019-11-17T22:22:33.006+0800 W  REPL     [ftdc] Rollback ID is not initialized yet.
+2019-11-17T22:22:33.006+0800 I  SHARDING [initandlisten] Marking collection local.replset.minvalid as collection version: <unsharded>
+2019-11-17T22:22:33.006+0800 I  STORAGE  [initandlisten] createCollection: local.replset.election with generated UUID: 43250141-069b-4d25-bfdb-b8af83c66220 and options: {}
+2019-11-17T22:22:33.010+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.election
+2019-11-17T22:22:33.010+0800 I  SHARDING [initandlisten] Marking collection local.replset.election as collection version: <unsharded>
+2019-11-17T22:22:33.011+0800 I  REPL     [initandlisten] Did not find local initialized voted for document at startup.
+2019-11-17T22:22:33.011+0800 I  REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2019-11-17T22:22:33.011+0800 I  STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: 9537bad9-776e-4400-8b11-462063a3bef9 and options: {}
+2019-11-17T22:22:33.014+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.system.rollback.id
+2019-11-17T22:22:33.015+0800 I  SHARDING [initandlisten] Marking collection local.system.rollback.id as collection version: <unsharded>
+2019-11-17T22:22:33.015+0800 I  REPL     [initandlisten] Initialized the rollback ID to 1
+2019-11-17T22:22:33.015+0800 I  REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2019-11-17T22:22:33.019+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: sharding state is not yet initialized
+2019-11-17T22:22:33.019+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2019-11-17T22:22:33.020+0800 I  NETWORK  [initandlisten] Listening on /tmp/mongodb-27022.sock
+2019-11-17T22:22:33.020+0800 I  NETWORK  [initandlisten] Listening on 0.0.0.0
+2019-11-17T22:22:33.020+0800 I  NETWORK  [initandlisten] waiting for connections on port 27022
+2019-11-17T22:27:33.019+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: sharding state is not yet initialized
+2019-11-17T22:27:33.019+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2019-11-17T22:31:32.439+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:58530 #1 (1 connection now open)
+2019-11-17T22:31:32.439+0800 I  NETWORK  [conn1] end connection 192.168.255.134:58530 (0 connections now open)
+2019-11-17T22:31:32.440+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:58532 #2 (1 connection now open)
+2019-11-17T22:31:32.441+0800 I  NETWORK  [conn2] received client metadata from 192.168.255.134:58532 conn2: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:31:32.442+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:58534 #3 (2 connections now open)
+2019-11-17T22:31:32.442+0800 I  NETWORK  [conn3] received client metadata from 192.168.255.134:58534 conn3: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:31:32.442+0800 I  CONNPOOL [Replication] Connecting to worker2:27020
+2019-11-17T22:31:32.445+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:58540 #5 (3 connections now open)
+2019-11-17T22:31:32.446+0800 I  NETWORK  [conn5] end connection 192.168.255.134:58540 (2 connections now open)
+2019-11-17T22:31:32.447+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:58542 #6 (3 connections now open)
+2019-11-17T22:31:32.447+0800 I  NETWORK  [conn6] received client metadata from 192.168.255.134:58542 conn6: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:31:32.447+0800 I  CONNPOOL [Replication] Connecting to worker2:27021
+2019-11-17T22:31:32.454+0800 I  STORAGE  [replexec-0] createCollection: local.system.replset with generated UUID: 53655d11-25d1-499b-8ba1-8dec7eedfe90 and options: {}
+2019-11-17T22:31:32.482+0800 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.system.replset
+2019-11-17T22:31:32.483+0800 I  REPL     [replexec-0] New replica set config in use: { _id: "shard-rs", version: 3, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "worker2:27020", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "worker2:27021", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "worker2:27022", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5dd159ab6095dc1e117a7891') } }
+2019-11-17T22:31:32.483+0800 I  REPL     [replexec-0] This node is worker2:27022 in the config
+2019-11-17T22:31:32.483+0800 I  REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2019-11-17T22:31:32.483+0800 I  REPL     [replexec-0] Starting replication storage threads
+2019-11-17T22:31:32.484+0800 I  REPL     [replexec-2] Member worker2:27021 is now in state SECONDARY
+2019-11-17T22:31:32.484+0800 I  REPL     [replexec-4] Member worker2:27020 is now in state PRIMARY
+2019-11-17T22:31:32.486+0800 I  STORAGE  [replexec-0] createCollection: local.temp_oplog_buffer with generated UUID: 4cc710a7-bd09-4107-980f-2b74e4fec17d and options: { temp: true }
+2019-11-17T22:31:32.519+0800 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.temp_oplog_buffer
+2019-11-17T22:31:32.519+0800 I  INITSYNC [replication-0] Starting initial sync (attempt 1 of 10)
+2019-11-17T22:31:32.519+0800 I  STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (4cc710a7-bd09-4107-980f-2b74e4fec17d).
+2019-11-17T22:31:32.520+0800 I  STORAGE  [replication-0] createCollection: local.temp_oplog_buffer with generated UUID: 816b3c0c-08af-4d59-9e11-9b5b27a73df1 and options: { temp: true }
+2019-11-17T22:31:32.524+0800 I  INDEX    [replication-0] index build: done building index _id_ on ns local.temp_oplog_buffer
+2019-11-17T22:31:32.524+0800 I  REPL     [replication-0] sync source candidate: worker2:27021
+2019-11-17T22:31:32.525+0800 I  INITSYNC [replication-0] Initial syncer oplog truncation finished in: 0ms
+2019-11-17T22:31:32.525+0800 I  REPL     [replication-0] ******
+2019-11-17T22:31:32.525+0800 I  REPL     [replication-0] creating replication oplog of size: 990MB...
+2019-11-17T22:31:32.525+0800 I  STORAGE  [replication-0] createCollection: local.oplog.rs with generated UUID: 9cac8f4a-a968-4a57-9d31-6d0ec77c56d5 and options: { capped: true, size: 1038090240, autoIndexId: false }
+2019-11-17T22:31:32.526+0800 I  STORAGE  [replication-0] Starting OplogTruncaterThread local.oplog.rs
+2019-11-17T22:31:32.527+0800 I  STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2019-11-17T22:31:32.527+0800 I  STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2019-11-17T22:31:32.527+0800 I  STORAGE  [replication-0] WiredTiger record store oplog processing took 0ms
+2019-11-17T22:31:32.560+0800 I  REPL     [replication-0] ******
+2019-11-17T22:31:32.560+0800 I  REPL     [replication-0] dropReplicatedDatabases - dropping 1 databases
+2019-11-17T22:31:32.560+0800 I  REPL     [replication-0] dropReplicatedDatabases - dropped 1 databases
+2019-11-17T22:31:32.565+0800 I  SHARDING [replication-1] Marking collection local.temp_oplog_buffer as collection version: <unsharded>
+2019-11-17T22:31:32.565+0800 I  INITSYNC [replication-0] CollectionCloner::start called, on ns:admin.system.version
+2019-11-17T22:31:32.566+0800 I  STORAGE  [repl-writer-worker-13] createCollection: admin.system.version with provided UUID: 0ede3bd7-592d-4af4-ab87-454761ca26d1 and options: { uuid: UUID("0ede3bd7-592d-4af4-ab87-454761ca26d1") }
+2019-11-17T22:31:32.572+0800 I  INDEX    [repl-writer-worker-13] index build: starting on admin.system.version properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" } using method: Foreground
+2019-11-17T22:31:32.572+0800 I  INDEX    [repl-writer-worker-13] build may temporarily use up to 500 megabytes of RAM
+2019-11-17T22:31:32.574+0800 I  COMMAND  [repl-writer-worker-1] setting featureCompatibilityVersion to 4.0
+2019-11-17T22:31:32.574+0800 I  INITSYNC [replication-1] CollectionCloner ns:admin.system.version finished cloning with status: OK
+2019-11-17T22:31:32.575+0800 I  INDEX    [replication-1] index build: inserted 1 keys from external sorter into index in 0 seconds
+2019-11-17T22:31:32.576+0800 I  INDEX    [replication-1] index build: done building index _id_ on ns admin.system.version
+2019-11-17T22:31:32.577+0800 I  INITSYNC [replication-0] CollectionCloner::start called, on ns:config.transactions
+2019-11-17T22:31:32.579+0800 I  STORAGE  [repl-writer-worker-14] createCollection: config.transactions with provided UUID: 85b70cd4-352b-46af-9f8b-9dea89e25d06 and options: { uuid: UUID("85b70cd4-352b-46af-9f8b-9dea89e25d06") }
+2019-11-17T22:31:32.584+0800 I  INDEX    [repl-writer-worker-14] index build: starting on config.transactions properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "config.transactions" } using method: Foreground
+2019-11-17T22:31:32.584+0800 I  INDEX    [repl-writer-worker-14] build may temporarily use up to 500 megabytes of RAM
+2019-11-17T22:31:32.586+0800 I  INITSYNC [replication-1] CollectionCloner ns:config.transactions finished cloning with status: OK
+2019-11-17T22:31:32.586+0800 I  INDEX    [replication-1] index build: inserted 0 keys from external sorter into index in 0 seconds
+2019-11-17T22:31:32.587+0800 I  INDEX    [replication-1] index build: done building index _id_ on ns config.transactions
+2019-11-17T22:31:32.587+0800 I  INITSYNC [replication-1] Finished cloning data: OK. Beginning oplog replay.
+2019-11-17T22:31:32.588+0800 I  INITSYNC [replication-0] No need to apply operations. (currently at { : Timestamp(1574001092, 1) })
+2019-11-17T22:31:32.588+0800 I  INITSYNC [replication-1] Finished fetching oplog during initial sync: CallbackCanceled: error in fetcher batch callback: oplog fetcher is shutting down. Last fetched optime: { ts: Timestamp(0, 0), t: -1 }
+2019-11-17T22:31:32.588+0800 I  INITSYNC [replication-1] Initial sync attempt finishing up.
+2019-11-17T22:31:32.588+0800 I  INITSYNC [replication-1] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1574001092519), initialSyncAttempts: [], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp(1574001092, 1), initialSyncOplogEnd: Timestamp(1574001092, 1), databases: { databasesCloned: 2, admin: { collections: 1, clonedCollections: 1, start: new Date(1574001092564), end: new Date(1574001092577), elapsedMillis: 13, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 1, fetchedBatches: 1, start: new Date(1574001092565), end: new Date(1574001092577), elapsedMillis: 12, receivedBatches: 1 } }, config: { collections: 1, clonedCollections: 1, start: new Date(1574001092576), end: new Date(1574001092587), elapsedMillis: 11, config.transactions: { documentsToCopy: 0, documentsCopied: 0, indexes: 1, fetchedBatches: 0, start: new Date(1574001092577), end: new Date(1574001092587), elapsedMillis: 10, receivedBatches: 0 } } } }
+2019-11-17T22:31:32.588+0800 I  STORAGE  [replication-1] Finishing collection drop for local.temp_oplog_buffer (816b3c0c-08af-4d59-9e11-9b5b27a73df1).
+2019-11-17T22:31:32.590+0800 I  SHARDING [replication-1] Marking collection config.transactions as collection version: <unsharded>
+2019-11-17T22:31:32.590+0800 I  SHARDING [replication-1] Marking collection local.replset.oplogTruncateAfterPoint as collection version: <unsharded>
+2019-11-17T22:31:32.590+0800 I  INITSYNC [replication-1] initial sync done; took 0s.
+2019-11-17T22:31:32.590+0800 I  REPL     [replication-1] transition to RECOVERING from STARTUP2
+2019-11-17T22:31:32.590+0800 I  REPL     [replication-1] Starting replication fetcher thread
+2019-11-17T22:31:32.591+0800 I  REPL     [replication-1] Starting replication applier thread
+2019-11-17T22:31:32.591+0800 I  REPL     [replication-1] Starting replication reporter thread
+2019-11-17T22:31:32.591+0800 I  REPL     [rsSync-0] Starting oplog application
+2019-11-17T22:31:32.591+0800 I  REPL     [rsBackgroundSync] could not find member to sync from
+2019-11-17T22:31:32.592+0800 I  REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+2019-11-17T22:31:32.592+0800 I  REPL     [rsSync-0] Resetting sync source to empty, which was :27017
+2019-11-17T22:31:42.565+0800 I  CONNPOOL [RS] Ending connection to host worker2:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2019-11-17T22:31:49.604+0800 I  REPL     [rsBackgroundSync] sync source candidate: worker2:27021
+2019-11-17T22:31:49.605+0800 I  REPL     [rsBackgroundSync] Changed sync source from empty to worker2:27021
+2019-11-17T22:31:49.606+0800 I  CONNPOOL [RS] Connecting to worker2:27021
+2019-11-17T22:31:49.607+0800 I  STORAGE  [replication-0] Triggering the first stable checkpoint. Initial Data: Timestamp(1574001092, 1) PrevStable: Timestamp(0, 0) CurrStable: Timestamp(1574001092, 1)
+2019-11-17T22:32:32.442+0800 I  NETWORK  [conn2] end connection 192.168.255.134:58532 (2 connections now open)
+2019-11-17T22:32:33.019+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: sharding state is not yet initialized
+2019-11-17T22:32:33.019+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2019-11-17T22:36:34.708+0800 I  CONNPOOL [RS] Ending connection to host worker2:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2019-11-17T22:36:34.709+0800 I  REPL     [replication-1] Restarting oplog query due to error: NetworkInterfaceExceededTimeLimit: error in fetcher batch callback :: caused by :: Request 520 timed out, deadline was 2019-11-17T22:36:34.342+0800, op was RemoteCommand 520 -- target:[worker2:27021] db:local expDate:2019-11-17T22:36:34.342+0800 cmd:{ getMore: 4402125121310564707, collection: "oplog.rs", batchSize: 13981010, maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp(1574001379, 1), t: 1 } }. Last fetched optime: { ts: Timestamp(1574001379, 1), t: 1 }. Restarts remaining: 1
+2019-11-17T22:36:34.709+0800 I  REPL     [replication-1] Scheduled new oplog query Fetcher source: worker2:27021 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574001379, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } query metadata: { $replData: 1, $oplogQueryData: 1, $readPreference: { mode: "secondaryPreferred" } } active: 1 findNetworkTimeout: 7000ms getMoreNetworkTimeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 525 -- target:worker2:27021 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574001379, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2019-11-17T22:36:34.709+0800 I  CONNPOOL [RS] Connecting to worker2:27021
+2019-11-17T22:37:33.019+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2019-11-17T22:37:33.019+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: sharding state is not yet initialized
+2019-11-17T22:42:33.019+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2019-11-17T22:42:33.019+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: sharding state is not yet initialized
+2019-11-17T22:47:33.019+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: sharding state is not yet initialized
+2019-11-17T22:47:33.019+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: sharding state is not yet initialized
+2019-11-17T22:48:06.373+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:39758 #16 (3 connections now open)
+2019-11-17T22:48:06.373+0800 I  NETWORK  [conn16] received client metadata from 192.168.255.134:39758 conn16: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:48:06.375+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:39762 #17 (4 connections now open)
+2019-11-17T22:48:06.376+0800 I  NETWORK  [conn17] received client metadata from 192.168.255.134:39762 conn17: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:49:38.692+0800 I  SHARDING [repl-writer-worker-14] initializing sharding state with: { shardName: "shard-rs", clusterId: ObjectId('5dd158fb4f87dbda32b2ae17'), configsvrConnectionString: "config-rs/worker2:27018,worker2:27019" }
+2019-11-17T22:49:38.692+0800 I  NETWORK  [repl-writer-worker-14] Starting new replica set monitor for config-rs/worker2:27018,worker2:27019
+2019-11-17T22:49:38.692+0800 I  SHARDING [repl-writer-worker-14] Finished initializing sharding components for secondary node.
+2019-11-17T22:49:38.693+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27018
+2019-11-17T22:49:38.693+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27019
+2019-11-17T22:49:38.693+0800 I  SHARDING [thread8] creating distributed lock ping thread for process worker2:27022:1574002178:3671810836521866343 (sleeping for 30000ms)
+2019-11-17T22:49:38.699+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Confirmed replica set for config-rs is config-rs/worker2:27018,worker2:27019
+2019-11-17T22:49:38.699+0800 I  SHARDING [Sharding-Fixed-0] Updating config server with confirmed set config-rs/worker2:27018,worker2:27019
+2019-11-17T22:49:38.708+0800 I  SHARDING [ShardRegistry] Received reply from config server node (unknown) indicating config server optime term has increased, previous optime { ts: Timestamp(0, 0), t: -1 }, now { ts: Timestamp(1574002176, 2), t: 1 }
+2019-11-17T22:49:38.712+0800 I  COMMAND  [repl-writer-worker-2] setting featureCompatibilityVersion to upgrading to 4.2
+2019-11-17T22:49:38.712+0800 I  NETWORK  [repl-writer-worker-2] Skip closing connection for connection # 17
+2019-11-17T22:49:38.712+0800 I  NETWORK  [repl-writer-worker-2] Skip closing connection for connection # 16
+2019-11-17T22:49:38.712+0800 I  NETWORK  [repl-writer-worker-2] Skip closing connection for connection # 6
+2019-11-17T22:49:38.712+0800 I  NETWORK  [repl-writer-worker-2] Skip closing connection for connection # 3
+2019-11-17T22:49:38.719+0800 W  SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2019-11-17T22:49:38.731+0800 I  COMMAND  [repl-writer-worker-15] setting featureCompatibilityVersion to 4.2
+2019-11-17T22:49:38.731+0800 I  NETWORK  [repl-writer-worker-15] Skip closing connection for connection # 17
+2019-11-17T22:49:38.731+0800 I  NETWORK  [repl-writer-worker-15] Skip closing connection for connection # 16
+2019-11-17T22:49:38.731+0800 I  NETWORK  [repl-writer-worker-15] Skip closing connection for connection # 6
+2019-11-17T22:49:38.731+0800 I  NETWORK  [repl-writer-worker-15] Skip closing connection for connection # 3
+2019-11-17T22:49:38.778+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:40614 #23 (5 connections now open)
+2019-11-17T22:49:38.778+0800 I  NETWORK  [conn23] received client metadata from 192.168.255.134:40614 conn23: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:50:06.064+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:40906 #24 (6 connections now open)
+2019-11-17T22:50:06.064+0800 I  NETWORK  [conn24] received client metadata from 192.168.255.134:40906 conn24: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:50:12.931+0800 I  CONNPOOL [RS] Ending connection to host worker2:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2019-11-17T22:50:12.932+0800 I  REPL     [replication-0] Restarting oplog query due to error: NetworkInterfaceExceededTimeLimit: error in fetcher batch callback :: caused by :: Request 1825 timed out, deadline was 2019-11-17T22:50:11.823+0800, op was RemoteCommand 1825 -- target:[worker2:27021] db:local expDate:2019-11-17T22:50:11.823+0800 cmd:{ getMore: 2878006810568937382, collection: "oplog.rs", batchSize: 13981010, maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp(1574002196, 1), t: 1 } }. Last fetched optime: { ts: Timestamp(1574002196, 1), t: 1 }. Restarts remaining: 1
+2019-11-17T22:50:12.932+0800 I  REPL     [replication-0] Scheduled new oplog query Fetcher source: worker2:27021 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574002196, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } query metadata: { $replData: 1, $oplogQueryData: 1, $readPreference: { mode: "secondaryPreferred" } } active: 1 findNetworkTimeout: 7000ms getMoreNetworkTimeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 1830 -- target:worker2:27021 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574002196, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2019-11-17T22:50:12.934+0800 I  CONNPOOL [RS] Connecting to worker2:27021
+2019-11-17T22:50:12.934+0800 W  REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: Sync source must be ahead of me. My last fetched oplog optime: { ts: Timestamp(1574002196, 1), t: 1 }, latest oplog optime of sync source: { ts: Timestamp(1574002196, 1), t: 1 }
+2019-11-17T22:50:12.935+0800 I  REPL     [rsBackgroundSync] Clearing sync source worker2:27021 to choose a new one.
+2019-11-17T22:50:12.935+0800 I  REPL     [rsBackgroundSync] could not find member to sync from
+2019-11-17T22:50:13.936+0800 I  REPL     [rsBackgroundSync] sync source candidate: worker2:27021
+2019-11-17T22:50:13.979+0800 I  REPL     [rsBackgroundSync] Changed sync source from empty to worker2:27021
+2019-11-17T22:50:14.789+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:40966 #26 (7 connections now open)
+2019-11-17T22:50:14.789+0800 I  NETWORK  [conn26] received client metadata from 192.168.255.134:40966 conn26: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:50:14.806+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:40972 #27 (8 connections now open)
+2019-11-17T22:50:14.807+0800 I  NETWORK  [conn27] received client metadata from 192.168.255.134:40972 conn27: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:50:14.808+0800 I  NETWORK  [shard-registry-reload] Starting new replica set monitor for shard-rs/worker2:27020,worker2:27021,worker2:27022
+2019-11-17T22:50:14.808+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27022
+2019-11-17T22:50:14.808+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27021
+2019-11-17T22:50:14.808+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27020
+2019-11-17T22:50:14.808+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:40976 #31 (9 connections now open)
+2019-11-17T22:50:14.809+0800 I  NETWORK  [conn31] received client metadata from 192.168.255.134:40976 conn31: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:50:14.809+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Confirmed replica set for shard-rs is shard-rs/worker2:27020,worker2:27021,worker2:27022
+2019-11-17T22:50:14.809+0800 I  SHARDING [Sharding-Fixed-1] Updating config server with confirmed set shard-rs/worker2:27020,worker2:27021,worker2:27022
+2019-11-17T22:50:38.709+0800 I  CONNPOOL [ShardRegistry] Ending idle connection to host worker2:27018 because the pool meets constraints; 1 connections to that host remain open
+2019-11-17T22:50:39.669+0800 I  STORAGE  [repl-writer-worker-2] createCollection: config.cache.databases with provided UUID: 27a98536-eeb9-4b00-bb12-312513f1b31d and options: { uuid: UUID("27a98536-eeb9-4b00-bb12-312513f1b31d") }
+2019-11-17T22:50:39.692+0800 I  INDEX    [repl-writer-worker-2] index build: done building index _id_ on ns config.cache.databases
+2019-11-17T22:51:18.533+0800 I  CONNPOOL [RS] Ending connection to host worker2:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2019-11-17T22:51:18.534+0800 I  REPL     [replication-1] Restarting oplog query due to error: NetworkInterfaceExceededTimeLimit: error in fetcher batch callback :: caused by :: Request 1949 timed out, deadline was 2019-11-17T22:51:17.930+0800, op was RemoteCommand 1949 -- target:[worker2:27021] db:local expDate:2019-11-17T22:51:17.930+0800 cmd:{ getMore: 2326736474288005422, collection: "oplog.rs", batchSize: 13981010, maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp(1574002262, 1), t: 1 } }. Last fetched optime: { ts: Timestamp(1574002262, 1), t: 1 }. Restarts remaining: 1
+2019-11-17T22:51:18.534+0800 I  REPL     [replication-1] Scheduled new oplog query Fetcher source: worker2:27021 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574002262, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } query metadata: { $replData: 1, $oplogQueryData: 1, $readPreference: { mode: "secondaryPreferred" } } active: 1 findNetworkTimeout: 7000ms getMoreNetworkTimeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 1957 -- target:worker2:27021 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574002262, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2019-11-17T22:51:18.534+0800 I  CONNPOOL [RS] Connecting to worker2:27021
+2019-11-17T22:51:18.540+0800 W  REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: Sync source must be ahead of me. My last fetched oplog optime: { ts: Timestamp(1574002262, 1), t: 1 }, latest oplog optime of sync source: { ts: Timestamp(1574002262, 1), t: 1 }
+2019-11-17T22:51:18.540+0800 I  REPL     [rsBackgroundSync] Clearing sync source worker2:27021 to choose a new one.
+2019-11-17T22:51:18.540+0800 I  REPL     [rsBackgroundSync] could not find member to sync from
+2019-11-17T22:51:19.541+0800 I  REPL     [rsBackgroundSync] sync source candidate: worker2:27021
+2019-11-17T22:51:19.542+0800 I  REPL     [rsBackgroundSync] Changed sync source from empty to worker2:27021
+2019-11-17T22:52:23.650+0800 I  CONNPOOL [RS] Ending connection to host worker2:27021 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2019-11-17T22:52:23.672+0800 I  REPL     [replication-1] Restarting oplog query due to error: NetworkInterfaceExceededTimeLimit: error in fetcher batch callback :: caused by :: Request 2072 timed out, deadline was 2019-11-17T22:52:23.525+0800, op was RemoteCommand 2072 -- target:[worker2:27021] db:local expDate:2019-11-17T22:52:23.525+0800 cmd:{ getMore: 4689331685548749937, collection: "oplog.rs", batchSize: 13981010, maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp(1574002328, 1), t: 1 } }. Last fetched optime: { ts: Timestamp(1574002328, 1), t: 1 }. Restarts remaining: 1
+2019-11-17T22:52:23.672+0800 I  REPL     [replication-1] Scheduled new oplog query Fetcher source: worker2:27021 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574002328, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } query metadata: { $replData: 1, $oplogQueryData: 1, $readPreference: { mode: "secondaryPreferred" } } active: 1 findNetworkTimeout: 7000ms getMoreNetworkTimeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 2083 -- target:worker2:27021 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp(1574002328, 1) } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 2000, batchSize: 13981010, term: 1, readConcern: { afterClusterTime: Timestamp(0, 1) } } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2019-11-17T22:52:23.674+0800 I  CONNPOOL [RS] Connecting to worker2:27021
+2019-11-17T22:52:33.019+0800 I  CONNPOOL [ShardRegistry] Connecting to worker2:27020
+2019-11-17T22:52:33.026+0800 I  SH_REFR  [ShardServerCatalogCacheLoader-0] Refresh for database config from version {} to version { uuid: UUID("fef9a58d-fc08-4065-90fd-cc79ca8ab621"), lastMod: 0 } took 6 ms
+2019-11-17T22:52:33.027+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:52:33.027+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:53:04.890+0800 I  STORAGE  [repl-writer-worker-14] createCollection: config.system.sessions with provided UUID: 7bdece80-312d-4444-a153-3027a1dc3fbd and options: { uuid: UUID("7bdece80-312d-4444-a153-3027a1dc3fbd") }
+2019-11-17T22:53:04.896+0800 I  INDEX    [repl-writer-worker-14] index build: done building index _id_ on ns config.system.sessions
+2019-11-17T22:53:04.957+0800 I  STORAGE  [repl-writer-worker-2] createCollection: config.cache.collections with provided UUID: ec33212d-bc8c-4be2-8e3c-65ae118966d6 and options: { uuid: UUID("ec33212d-bc8c-4be2-8e3c-65ae118966d6") }
+2019-11-17T22:53:04.984+0800 I  INDEX    [repl-writer-worker-2] index build: done building index _id_ on ns config.cache.collections
+2019-11-17T22:53:04.989+0800 I  STORAGE  [repl-writer-worker-6] createCollection: config.cache.chunks.config.system.sessions with provided UUID: d77290bd-404c-48c3-b4ba-f3b30156d633 and options: { uuid: UUID("d77290bd-404c-48c3-b4ba-f3b30156d633") }
+2019-11-17T22:53:04.994+0800 I  INDEX    [repl-writer-worker-6] index build: done building index _id_ on ns config.cache.chunks.config.system.sessions
+2019-11-17T22:53:05.006+0800 I  INDEX    [repl-writer-worker-11] index build: starting on config.cache.chunks.config.system.sessions properties: { v: 2, key: { lastmod: 1 }, name: "lastmod_1", ns: "config.cache.chunks.config.system.sessions" } using method: Hybrid
+2019-11-17T22:53:05.006+0800 I  INDEX    [repl-writer-worker-11] build may temporarily use up to 500 megabytes of RAM
+2019-11-17T22:53:05.006+0800 I  STORAGE  [repl-writer-worker-11] Index build initialized: b348ed0a-7156-473b-a927-23cf3f58dee5: config.cache.chunks.config.system.sessions (d77290bd-404c-48c3-b4ba-f3b30156d633 ): indexes: 1
+2019-11-17T22:53:05.007+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2019-11-17T22:53:05.007+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2019-11-17T22:53:05.015+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: drain applied 1 side writes (inserted: 1, deleted: 0) for 'lastmod_1' in 0 ms
+2019-11-17T22:53:05.016+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index lastmod_1 on ns config.cache.chunks.config.system.sessions
+2019-11-17T22:53:05.016+0800 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: b348ed0a-7156-473b-a927-23cf3f58dee5: config.cache.chunks.config.system.sessions ( d77290bd-404c-48c3-b4ba-f3b30156d633 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2019-11-17T22:53:05.025+0800 I  INDEX    [repl-writer-worker-14] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800, ns: "config.system.sessions" } using method: Hybrid
+2019-11-17T22:53:05.025+0800 I  INDEX    [repl-writer-worker-14] build may temporarily use up to 500 megabytes of RAM
+2019-11-17T22:53:05.025+0800 I  STORAGE  [repl-writer-worker-14] Index build initialized: fa8dd755-af9e-491b-9f5c-969b12ec14b8: config.system.sessions (7bdece80-312d-4444-a153-3027a1dc3fbd ): indexes: 1
+2019-11-17T22:53:05.025+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2019-11-17T22:53:05.026+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2019-11-17T22:53:05.027+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: drain applied 2 side writes (inserted: 2, deleted: 0) for 'lsidTTLIndex' in 0 ms
+2019-11-17T22:53:05.027+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index lsidTTLIndex on ns config.system.sessions
+2019-11-17T22:53:05.028+0800 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: fa8dd755-af9e-491b-9f5c-969b12ec14b8: config.system.sessions ( 7bdece80-312d-4444-a153-3027a1dc3fbd ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2019-11-17T22:53:05.953+0800 I  NETWORK  [listener] connection accepted from 192.168.255.134:42572 #35 (10 connections now open)
+2019-11-17T22:53:05.953+0800 I  NETWORK  [conn35] received client metadata from 192.168.255.134:42572 conn35: { driver: { name: "NetworkInterfaceTL", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:53:20.925+0800 I  STORAGE  [repl-writer-worker-8] createCollection: test.herrywen with provided UUID: 3a0c264d-cdb6-4b2b-963c-eea51f0aa472 and options: { uuid: UUID("3a0c264d-cdb6-4b2b-963c-eea51f0aa472") }
+2019-11-17T22:53:20.930+0800 I  INDEX    [repl-writer-worker-8] index build: done building index _id_ on ns test.herrywen
+2019-11-17T22:53:20.959+0800 I  STORAGE  [repl-writer-worker-7] createCollection: config.cache.chunks.test.herrywen with provided UUID: 13475a23-b574-4d77-9585-c72c53831d10 and options: { uuid: UUID("13475a23-b574-4d77-9585-c72c53831d10") }
+2019-11-17T22:53:20.965+0800 I  INDEX    [repl-writer-worker-7] index build: done building index _id_ on ns config.cache.chunks.test.herrywen
+2019-11-17T22:53:20.979+0800 I  INDEX    [repl-writer-worker-1] index build: starting on config.cache.chunks.test.herrywen properties: { v: 2, key: { lastmod: 1 }, name: "lastmod_1", ns: "config.cache.chunks.test.herrywen" } using method: Hybrid
+2019-11-17T22:53:20.979+0800 I  INDEX    [repl-writer-worker-1] build may temporarily use up to 500 megabytes of RAM
+2019-11-17T22:53:20.979+0800 I  STORAGE  [repl-writer-worker-1] Index build initialized: 5257c39b-80b1-4dc7-84ee-145d8a3bf757: config.cache.chunks.test.herrywen (13475a23-b574-4d77-9585-c72c53831d10 ): indexes: 1
+2019-11-17T22:53:20.980+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: collection scan done. scanned 0 total records in 0 seconds
+2019-11-17T22:53:20.980+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: inserted 0 keys from external sorter into index in 0 seconds
+2019-11-17T22:53:20.983+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: drain applied 1 side writes (inserted: 1, deleted: 0) for 'lastmod_1' in 0 ms
+2019-11-17T22:53:20.983+0800 I  INDEX    [IndexBuildsCoordinatorMongod-0] index build: done building index lastmod_1 on ns config.cache.chunks.test.herrywen
+2019-11-17T22:53:20.985+0800 I  STORAGE  [IndexBuildsCoordinatorMongod-0] Index build completed successfully: 5257c39b-80b1-4dc7-84ee-145d8a3bf757: config.cache.chunks.test.herrywen ( 13475a23-b574-4d77-9585-c72c53831d10 ). Index specs built: 1. Indexes in catalog before build: 1. Indexes in catalog after build: 2
+2019-11-17T22:53:28.282+0800 E  STORAGE  [WTCheckpointThread] WiredTiger error (28) [1574002408:282916][57250:0x7f7df5738700], file:index-29--7040793113143076515.wt, WT_SESSION.checkpoint: __posix_file_write, 543: /root/fenpian/shard3/dbPath/index-29--7040793113143076515.wt: handle-write: pwrite: failed to write 4096 bytes at offset 8192: No space left on device Raw: [1574002408:282916][57250:0x7f7df5738700], file:index-29--7040793113143076515.wt, WT_SESSION.checkpoint: __posix_file_write, 543: /root/fenpian/shard3/dbPath/index-29--7040793113143076515.wt: handle-write: pwrite: failed to write 4096 bytes at offset 8192: No space left on device
+2019-11-17T22:53:28.283+0800 E  STORAGE  [WTCheckpointThread] WiredTiger error (22) [1574002408:283020][57250:0x7f7df5738700], file:index-31--7040793113143076515.wt, WT_SESSION.checkpoint: __wt_block_checkpoint_resolve, 804: index-31--7040793113143076515.wt: the checkpoint failed, the system must restart: Invalid argument Raw: [1574002408:283020][57250:0x7f7df5738700], file:index-31--7040793113143076515.wt, WT_SESSION.checkpoint: __wt_block_checkpoint_resolve, 804: index-31--7040793113143076515.wt: the checkpoint failed, the system must restart: Invalid argument
+2019-11-17T22:53:28.283+0800 E  STORAGE  [WTCheckpointThread] WiredTiger error (-31804) [1574002408:283196][57250:0x7f7df5738700], file:index-31--7040793113143076515.wt, WT_SESSION.checkpoint: __wt_panic, 494: the process must exit and restart: WT_PANIC: WiredTiger library panic Raw: [1574002408:283196][57250:0x7f7df5738700], file:index-31--7040793113143076515.wt, WT_SESSION.checkpoint: __wt_panic, 494: the process must exit and restart: WT_PANIC: WiredTiger library panic
+2019-11-17T22:53:28.283+0800 F  -        [WTCheckpointThread] Fatal Assertion 50853 at src/mongo/db/storage/wiredtiger/wiredtiger_util.cpp 414
+2019-11-17T22:53:28.283+0800 F  -        [WTCheckpointThread] 
+
+***aborting after fassert() failure
+
+
+2019-11-17T22:53:28.335+0800 F  -        [WTCheckpointThread] Got signal: 6 (Aborted).
+ 0x558ca8d50751 0x558ca8d4ff4e 0x558ca8d4ffe6 0x7f7e017e05d0 0x7f7e0143a207 0x7f7e0143b8f8 0x558ca71c427b 0x558ca6f4cadc 0x558ca7535eca 0x558ca6f58799 0x558ca6f58bfd 0x558ca6f66f07 0x558ca75027c2 0x558ca754a06e 0x558ca754a977 0x558ca6f57d6d 0x558ca74ac0c1 0x558ca8c2f77c 0x558ca8e7666f 0x7f7e017d8dd5 0x7f7e01501ead
+----- BEGIN BACKTRACE -----
+{"backtrace":[{"b":"558CA64B4000","o":"289C751","s":"_ZN5mongo15printStackTraceERSo"},{"b":"558CA64B4000","o":"289BF4E"},{"b":"558CA64B4000","o":"289BFE6"},{"b":"7F7E017D1000","o":"F5D0"},{"b":"7F7E01404000","o":"36207","s":"gsignal"},{"b":"7F7E01404000","o":"378F8","s":"abort"},{"b":"558CA64B4000","o":"D1027B","s":"_ZN5mongo32fassertFailedNoTraceWithLocationEiPKcj"},{"b":"558CA64B4000","o":"A98ADC"},{"b":"558CA64B4000","o":"1081ECA"},{"b":"558CA64B4000","o":"AA4799","s":"__wt_err_func"},{"b":"558CA64B4000","o":"AA4BFD","s":"__wt_panic"},{"b":"558CA64B4000","o":"AB2F07"},{"b":"558CA64B4000","o":"104E7C2","s":"__wt_meta_track_off"},{"b":"558CA64B4000","o":"109606E"},{"b":"558CA64B4000","o":"1096977","s":"__wt_txn_checkpoint"},{"b":"558CA64B4000","o":"AA3D6D"},{"b":"558CA64B4000","o":"FF80C1","s":"_ZN5mongo18WiredTigerKVEngine26WiredTigerCheckpointThread3runEv"},{"b":"558CA64B4000","o":"277B77C","s":"_ZN5mongo13BackgroundJob7jobBodyEv"},{"b":"558CA64B4000","o":"29C266F"},{"b":"7F7E017D1000","o":"7DD5"},{"b":"7F7E01404000","o":"FDEAD","s":"clone"}],"processInfo":{ "mongodbVersion" : "4.2.1", "gitVersion" : "edf6d45851c0b9ee15548f0f847df141764a317e", "compiledModules" : [ "enterprise" ], "uname" : { "sysname" : "Linux", "release" : "3.10.0-957.1.3.el7.x86_64", "version" : "#1 SMP Thu Nov 29 14:49:43 UTC 2018", "machine" : "x86_64" }, "somap" : [ { "b" : "558CA64B4000", "elfType" : 3, "buildId" : "B5231C4D39F8580214F754D50B389A9FC1DFDF25" 

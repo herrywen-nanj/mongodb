@@ -1,0 +1,126 @@
+# mongod.conf
+
+# for documentation of all options, see:
+#   http://docs.mongodb.org/manual/reference/configuration-options/
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /var/log/mongodb/mongod.log
+
+# Where and how to store data.
+storage:
+  dbPath: /var/lib/mongo
+  journal:
+    enabled: true
+#  engine:
+#  wiredTiger:
+
+# how the process runs
+processManagement:
+  fork: true  # fork and run in background
+  pidFilePath: /var/run/mongodb/mongod.pid  # location of pidfile
+  timeZoneInfo: /usr/share/zoneinfo
+
+# network interfaces
+net:
+  port: 27017
+  bindIp: 0.0.0.0  # Enter 0.0.0.0,:: to bind to all IPv4 and IPv6 addresses or, alternatively, use the net.bindIpAll setting.
+
+
+#security:
+
+#operationProfiling:
+
+replication:
+   replSetName: rs
+
+#sharding:
+
+## Enterprise-Only Options
+
+#auditLog:
+
+#snmp:
+2019-11-17T22:42:58.228+0800 I  CONTROL  [main] ***** SERVER RESTARTED *****
+2019-11-17T22:42:58.917+0800 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-11-17T22:42:59.870+0800 I  CONTROL  [main] 
+2019-11-17T22:42:59.870+0800 I  CONTROL  [main] ** WARNING: Access control is not enabled for the database.
+2019-11-17T22:42:59.870+0800 I  CONTROL  [main] **          Read and write access to data and configuration is unrestricted.
+2019-11-17T22:42:59.870+0800 I  CONTROL  [main] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-11-17T22:42:59.870+0800 I  CONTROL  [main] 
+2019-11-17T22:42:59.892+0800 I  SHARDING [mongosMain] mongos version v4.2.1
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] db version v4.2.1
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] allocator: tcmalloc
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] modules: enterprise 
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] build environment:
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain]     distmod: rhel70
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain]     distarch: x86_64
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain]     target_arch: x86_64
+2019-11-17T22:42:59.892+0800 I  CONTROL  [mongosMain] options: { config: "mongdb.conf", net: { bindIp: "0.0.0.0", port: 40000 }, processManagement: { fork: true, pidFilePath: "/var/run/mongodb/mongod.pid", timeZoneInfo: "/usr/share/zoneinfo" }, sharding: { configDB: "config-rs/127.0.0.1:27018,127.0.0.1:27019" }, systemLog: { destination: "file", logAppend: true, path: "/root/fenpian/luyou/mongod.log" } }
+2019-11-17T22:42:59.895+0800 I  NETWORK  [mongosMain] Starting new replica set monitor for config-rs/127.0.0.1:27018,127.0.0.1:27019
+2019-11-17T22:42:59.896+0800 I  SHARDING [thread1] creating distributed lock ping thread for process worker2:40000:1574001779:-2529252003240002016 (sleeping for 30000ms)
+2019-11-17T22:42:59.941+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to 127.0.0.1:27018
+2019-11-17T22:42:59.971+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to 127.0.0.1:27019
+2019-11-17T22:43:00.010+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Confirmed replica set for config-rs is config-rs/worker2:27018,worker2:27019
+2019-11-17T22:43:00.010+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27018
+2019-11-17T22:43:00.010+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27019
+2019-11-17T22:43:00.011+0800 I  SHARDING [Sharding-Fixed-0] Updating sharding state with confirmed set config-rs/worker2:27018,worker2:27019
+2019-11-17T22:43:00.011+0800 I  SHARDING [Sharding-Fixed-0] Updating ShardRegistry connection string for shard config from: config-rs/127.0.0.1:27018,127.0.0.1:27019 to: config-rs/worker2:27018,worker2:27019
+2019-11-17T22:43:00.061+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Confirmed replica set for config-rs is config-rs/worker2:27018,worker2:27019
+2019-11-17T22:43:00.062+0800 I  SHARDING [UpdateReplicaSetOnConfigServer] Updating sharding state with confirmed set config-rs/worker2:27018,worker2:27019
+2019-11-17T22:43:00.230+0800 I  SHARDING [ShardRegistry] Received reply from config server node (unknown) indicating config server optime term has increased, previous optime { ts: Timestamp(0, 0), t: -1 }, now { ts: Timestamp(1574001776, 1), t: 1 }
+2019-11-17T22:43:00.292+0800 I  FTDC     [mongosMain] Initializing full-time diagnostic data capture with directory '/root/fenpian/luyou/mongod.diagnostic.data'
+2019-11-17T22:43:00.324+0800 I  SH_REFR  [ConfigServerCatalogCacheLoader-0] Refresh for database config from version {} to version { uuid: UUID("1d3f2ad2-fa0b-4f45-8de6-452fed7a7cde"), lastMod: 0 } took 25 ms
+2019-11-17T22:43:00.325+0800 I  NETWORK  [mongosMain] Listening on /tmp/mongodb-40000.sock
+2019-11-17T22:43:00.325+0800 I  NETWORK  [mongosMain] Listening on 0.0.0.0
+2019-11-17T22:43:00.326+0800 I  NETWORK  [mongosMain] waiting for connections on port 40000
+2019-11-17T22:43:00.352+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:43:00.362+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:43:00.491+0800 W  SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2019-11-17T22:43:30.701+0800 I  CONNPOOL [ShardRegistry] Connecting to worker2:27019
+2019-11-17T22:43:34.084+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:35816 #9 (1 connection now open)
+2019-11-17T22:43:34.123+0800 I  NETWORK  [conn9] received client metadata from 127.0.0.1:35816 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.1" }, os: { type: "Linux", name: "CentOS Linux release 7.6.1810 (Core) ", architecture: "x86_64", version: "Kernel 3.10.0-957.1.3.el7.x86_64" } }
+2019-11-17T22:44:00.352+0800 I  CONNPOOL [ShardRegistry] Ending idle connection to host worker2:27018 because the pool meets constraints; 2 connections to that host remain open
+2019-11-17T22:44:00.490+0800 I  CONNPOOL [ShardRegistry] Ending idle connection to host worker2:27018 because the pool meets constraints; 1 connections to that host remain open
+2019-11-17T22:48:00.010+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Dropping all pooled connections to 127.0.0.1:27018 due to ShutdownInProgress: Pool for 127.0.0.1:27018 has expired.
+2019-11-17T22:48:00.040+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Dropping all pooled connections to 127.0.0.1:27019 due to ShutdownInProgress: Pool for 127.0.0.1:27019 has expired.
+2019-11-17T22:48:00.297+0800 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection config.system.sessions took 3 ms and found the collection is not sharded
+2019-11-17T22:48:00.297+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:48:00.301+0800 I  SH_REFR  [ConfigServerCatalogCacheLoader-1] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2019-11-17T22:48:00.301+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:48:40.971+0800 I  CONNPOOL [TaskExecutorPool-0] Connecting to worker2:27018
+2019-11-17T22:48:41.971+0800 I  CONNPOOL [TaskExecutorPool-0] Connecting to worker2:27019
+2019-11-17T22:49:06.824+0800 I  CONNPOOL [ShardRegistry] Connecting to worker2:27018
+2019-11-17T22:49:38.769+0800 I  NETWORK  [conn9] Starting new replica set monitor for shard-rs/worker2:27020,worker2:27021,worker2:27022
+2019-11-17T22:49:38.772+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27021
+2019-11-17T22:49:38.772+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27022
+2019-11-17T22:49:38.773+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27020
+2019-11-17T22:49:38.775+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Confirmed replica set for shard-rs is shard-rs/worker2:27020,worker2:27021,worker2:27022
+2019-11-17T22:49:38.775+0800 I  SHARDING [UpdateReplicaSetOnConfigServer] Updating sharding state with confirmed set shard-rs/worker2:27020,worker2:27021,worker2:27022
+2019-11-17T22:51:03.355+0800 I  CONNPOOL [ShardRegistry] Connecting to worker2:27020
+2019-11-17T22:52:23.646+0800 I  CONNPOOL [ShardRegistry] Ending idle connection to host worker2:27018 because the pool meets constraints; 1 connections to that host remain open
+2019-11-17T22:53:00.296+0800 I  SH_REFR  [ConfigServerCatalogCacheLoader-2] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2019-11-17T22:53:00.296+0800 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:53:00.300+0800 I  SH_REFR  [ConfigServerCatalogCacheLoader-2] Refresh for collection config.system.sessions took 1 ms and found the collection is not sharded
+2019-11-17T22:53:00.301+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Collection config.system.sessions is not sharded.
+2019-11-17T22:53:28.365+0800 I  CONNPOOL [ShardRegistry] Ending connection to host worker2:27018 due to bad connection status: HostUnreachable: Connection closed by peer; 0 connections to that host remain open
+2019-11-17T22:53:28.365+0800 I  CONNPOOL [ShardRegistry] Connecting to worker2:27018
+2019-11-17T22:53:28.365+0800 I  NETWORK  [UpdateReplicaSetOnConfigServer] Marking host worker2:27018 as failed :: caused by :: HostUnreachable: Connection closed by peer
+2019-11-17T22:53:28.365+0800 W  SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: HostUnreachable: Connection closed by peer
+2019-11-17T22:53:29.130+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] dropping unhealthy pooled connection to worker2:27020
+2019-11-17T22:53:29.130+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] dropping unhealthy pooled connection to worker2:27022
+2019-11-17T22:53:29.130+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] dropping unhealthy pooled connection to worker2:27021
+2019-11-17T22:53:29.130+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] dropping unhealthy pooled connection to worker2:27018
+2019-11-17T22:53:29.130+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] dropping unhealthy pooled connection to worker2:27019
+2019-11-17T22:53:29.131+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27020
+2019-11-17T22:53:29.131+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27022
+2019-11-17T22:53:29.131+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27021
+2019-11-17T22:53:29.131+0800 I  CONNPOOL [ReplicaSetMonitor-TaskExecutor] Connecting to worker2:27019
+2019-11-17T22:53:29.132+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Marking host worker2:27020 as failed :: caused by :: HostUnreachable: Error connecting to worker2:27020 (192.168.255.134:27020) :: caused by :: Connection refused
+2019-11-17T22:53:29.132+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Marking host worker2:27022 as failed :: caused by :: HostUnreachable: Error connecting to worker2:27022 (192.168.255.134:27022) :: caused by :: Connection refused
+2019-11-17T22:53:29.132+0800 I  NETWORK  [ReplicaSetMonitor-TaskExecutor] Marking host worker2:27021 as failed :: caused by :: HostUnreachable: Error connecting to worker2:27021 (192.168.255.134:27021) :: caused by :: Connection refused
+2019-11-17T22:53:29.132+0800 W  NETWORK  [ReplicaSetMonitor-TaskExecutor] Unable t
