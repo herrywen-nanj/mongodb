@@ -1,3 +1,4 @@
+https://blog.csdn.net/zhiwule1314/article/details/103085386#mongodb_29
 # mongodb
 mongodb分布式分片副本集
 # 分配端口
