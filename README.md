@@ -2,8 +2,8 @@ https://blog.csdn.net/zhiwule1314/article/details/103085386#mongodb_29
 # mongodb
 mongodb分布式分片副本集
 # 分配端口
-27018,27019   configsrv
-27020,27021,27022   shardsvr
+27018,27019   configsrv  
+27020,27021,27022   shardsvr  
    clusterRole: shardsvr
 
 
